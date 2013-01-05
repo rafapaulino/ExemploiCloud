@@ -20,6 +20,7 @@
 		6A5E735B1630345C0079F408 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5E733C1630345B0079F408 /* Foundation.framework */; };
 		6A5E73631630345C0079F408 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6A5E73611630345C0079F408 /* InfoPlist.strings */; };
 		6A5E73661630345C0079F408 /* ExemploiCloudTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E73651630345C0079F408 /* ExemploiCloudTests.m */; };
+		6A5E73721630385F0079F408 /* GerenciadorArquivo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5E73711630385F0079F408 /* GerenciadorArquivo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,9 @@
 		6A5E73621630345C0079F408 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6A5E73641630345C0079F408 /* ExemploiCloudTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExemploiCloudTests.h; sourceTree = "<group>"; };
 		6A5E73651630345C0079F408 /* ExemploiCloudTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExemploiCloudTests.m; sourceTree = "<group>"; };
+		6A5E736F163034C50079F408 /* ExemploiCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ExemploiCloud.entitlements; sourceTree = "<group>"; };
+		6A5E73701630385F0079F408 /* GerenciadorArquivo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GerenciadorArquivo.h; sourceTree = "<group>"; };
+		6A5E73711630385F0079F408 /* GerenciadorArquivo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GerenciadorArquivo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +115,14 @@
 		6A5E73401630345B0079F408 /* ExemploiCloud */ = {
 			isa = PBXGroup;
 			children = (
+				6A5E736F163034C50079F408 /* ExemploiCloud.entitlements */,
 				6A5E73491630345B0079F408 /* AppDelegate.h */,
 				6A5E734A1630345B0079F408 /* AppDelegate.m */,
 				6A5E734C1630345B0079F408 /* MainStoryboard.storyboard */,
 				6A5E734F1630345B0079F408 /* ViewController.h */,
 				6A5E73501630345B0079F408 /* ViewController.m */,
+				6A5E73701630385F0079F408 /* GerenciadorArquivo.h */,
+				6A5E73711630385F0079F408 /* GerenciadorArquivo.m */,
 				6A5E73411630345B0079F408 /* Supporting Files */,
 			);
 			path = ExemploiCloud;
@@ -261,6 +268,7 @@
 				6A5E73471630345B0079F408 /* main.m in Sources */,
 				6A5E734B1630345B0079F408 /* AppDelegate.m in Sources */,
 				6A5E73511630345B0079F408 /* ViewController.m in Sources */,
+				6A5E73721630385F0079F408 /* GerenciadorArquivo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,6 +370,7 @@
 		6A5E736A1630345C0079F408 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExemploiCloud/ExemploiCloud.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExemploiCloud/ExemploiCloud-Prefix.pch";
 				INFOPLIST_FILE = "ExemploiCloud/ExemploiCloud-Info.plist";
@@ -373,6 +382,7 @@
 		6A5E736B1630345C0079F408 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = ExemploiCloud/ExemploiCloud.entitlements;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ExemploiCloud/ExemploiCloud-Prefix.pch";
 				INFOPLIST_FILE = "ExemploiCloud/ExemploiCloud-Info.plist";
